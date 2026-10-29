@@ -1,0 +1,46 @@
+{
+  "name": "optiweb-studio",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/api-selftest.mjs",
+    "test:security": "node scripts/security-probe.mjs",
+    "test:a11y": "node scripts/a11y-audit.mjs",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "dotenv": "17.3.1",
+    "drizzle-orm": "0.45.2",
+    "jszip": "^3.10.2",
+    "lucide-react": "^1.64.0",
+    "next": "16.2.6",
+    "node-html-parser": "^9.0.5",
+    "pg": "8.20.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.17",
+    "@types/node": "22.19.15",
+    "@types/pg": "8.18.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "drizzle-kit": "0.31.10",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "postcss": "^8.5.8",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3"
+  },
+  "version": "1.0.0",
+  "description": "Developer workspace for static asset performance: image conversion, CSS font-display analysis and measured savings.",
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
